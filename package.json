@@ -1,7 +1,7 @@
 {
-  "name": "sportradarnode",
+  "name": "sportradar-node",
   "version": "1.0.0",
-  "description": "A package for interacting with Sportrader API",
+  "description": "A Node package for interacting with the Sportrader API",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -20,7 +20,10 @@
     "url": "git+https://github.com/dwright20/SportradarNode.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Dejon",
+    "url": "https://dejon.net"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dwright20/SportradarNode/issues"
@@ -37,5 +40,8 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
