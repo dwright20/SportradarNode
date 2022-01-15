@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 
 export enum Formats {
   json = '.json',
@@ -15,23 +15,23 @@ export interface SportradarSettings {
 export class Sportradar implements SportradarSettings {
   API_BASE_URL: string = 'http://api.sportradar.us/';
 
+  AxiosClient: AxiosInstance;
   format: Formats;
   requestDelayTime: number;
   apiKey: string;
   requestTimeout: number;
 
-  private instance = axios.create({
-    baseURL: this.API_BASE_URL,
-    headers: { application: 'sportradar-node' },
-  });
-
   constructor(sportradarSettings: SportradarSettings) {
     this.format = sportradarSettings.format ?? Formats.json;
     this.apiKey = sportradarSettings.apiKey;
-    this.instance.defaults.params = { api_key: sportradarSettings.apiKey };
     this.requestTimeout = sportradarSettings.requestTimeout ?? 3000;
-    this.instance.defaults.timeout = this.requestTimeout;
     this.requestDelayTime = sportradarSettings.requestDelayTime ?? 1500;
+    this.AxiosClient = axios.create({
+      baseURL: this.API_BASE_URL,
+      headers: { application: 'sportradar-node' },
+      params: { api_key: sportradarSettings.apiKey },
+      timeout: this.requestTimeout,
+    });
   }
 
   private sleep() {
@@ -42,11 +42,11 @@ export class Sportradar implements SportradarSettings {
 
   async getRequest(path: string) {
     await this.sleep();
-    return this.instance.get(path + this.format);
+    return this.AxiosClient.get(path + this.format);
   }
 
   async postRequest(path: string) {
     await this.sleep();
-    return this.instance.post(path + this.format);
+    return this.AxiosClient.post(path + this.format);
   }
 }

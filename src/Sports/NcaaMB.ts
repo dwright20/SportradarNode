@@ -1,13 +1,13 @@
 import { Sportradar } from '../Sportradar';
 import { Defaults, SportConstructor } from './Shared';
 
-enum SeasonType {
+export enum SeasonType {
   REG = 'REG',
   CONF = 'CT',
   POST = 'PST',
 }
 
-enum RankingsType {
+export enum RankingsType {
   AP = 'AP',
   US = 'US',
 }

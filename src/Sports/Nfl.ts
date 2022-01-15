@@ -1,7 +1,7 @@
 import { Sportradar } from '../Sportradar';
 import { Defaults, SportConstructor } from './Shared';
 
-enum NflSeason {
+export enum SeasonType {
   REG = 'REG',
   PRE = 'PRE',
   POST = 'PST',
@@ -52,16 +52,16 @@ export class Nfl extends Sportradar {
     return this.getRequest(`${this.prefix}players/${playerId}/profile`);
   }
 
-  getPostgameStandings(year: string, nflSeason: NflSeason) {
-    return this.getRequest(`${this.prefix}seasons/${year}/${nflSeason}/standings/season`);
+  getPostgameStandings(year: string, seasonType: SeasonType) {
+    return this.getRequest(`${this.prefix}seasons/${year}/${seasonType}/standings/season`);
   }
 
-  getSeasonSchedule(year: string, nflSeason: NflSeason) {
-    return this.getRequest(`${this.prefix}games/${year}/${nflSeason}/schedule`);
+  getSeasonSchedule(year: string, seasonType: SeasonType) {
+    return this.getRequest(`${this.prefix}games/${year}/${seasonType}/schedule`);
   }
 
-  getSeasonStatistics(year: string, nflSeason: NflSeason, teamId: string) {
-    return this.getRequest(`${this.prefix}games/${year}/${nflSeason}/teams/${teamId}/statistics`);
+  getSeasonStatistics(year: string, seasonType: SeasonType, teamId: string) {
+    return this.getRequest(`${this.prefix}games/${year}/${seasonType}/teams/${teamId}/statistics`);
   }
 
   getSeasons() {
@@ -76,15 +76,15 @@ export class Nfl extends Sportradar {
     return this.getRequest(`${this.prefix}team/${teamId}/full_roster`);
   }
 
-  getWeeklyDepthCharts(year: string, nflSeason: NflSeason, week: number) {
-    return this.getRequest(`${this.prefix}seasons/${year}/${nflSeason}/${week}/depth_charts`);
+  getWeeklyDepthCharts(year: string, seasonType: SeasonType, week: number) {
+    return this.getRequest(`${this.prefix}seasons/${year}/${seasonType}/${week}/depth_charts`);
   }
 
-  getWeeklyInjuries(year: string, nflSeason: NflSeason, week: number) {
-    return this.getRequest(`${this.prefix}seasons/${year}/${nflSeason}/${week}/injuries`);
+  getWeeklyInjuries(year: string, seasonType: SeasonType, week: number) {
+    return this.getRequest(`${this.prefix}seasons/${year}/${seasonType}/${week}/injuries`);
   }
 
-  getWeeklySchedule(year: string, nflSeason: NflSeason, week: number) {
-    return this.getRequest(`${this.prefix}seasons/${year}/${nflSeason}/${week}/schedule`);
+  getWeeklySchedule(year: string, seasonType: SeasonType, week: number) {
+    return this.getRequest(`${this.prefix}seasons/${year}/${seasonType}/${week}/schedule`);
   }
 }

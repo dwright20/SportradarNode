@@ -1,9 +1,9 @@
-import { NbaDraft } from '../../index';
+import { NflDraft } from '../../index';
 import { MethodTestGenerator } from '../../Testing/Shared';
 
-const testSportradarObject = new NbaDraft({ apiKey: '' });
+const testSportradarObject = new NflDraft({ apiKey: '' });
 
-const TEST_TEAM_ID = '583ecefd-fb46-11e1-82cb-f4ce4684ea4c';
+const TEST_TEAM_ID = '97354895-8c77-4fd4-a860-32e62ea7382a';
 
 const methodTests = [
   MethodTestGenerator(testSportradarObject.getDraftSummary.bind(testSportradarObject), 'getDraftSummary', ['2020']),
