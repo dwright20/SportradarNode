@@ -8,6 +8,6 @@
         "sourceMap": true,
         "resolveJsonModule": true
     },
-    "include": ["src"],
+    "include": ["src", "test/__mocks__", "test/Shared.ts"],
     "exclude": ["node_modules", "**/__tests__/*"]
 }

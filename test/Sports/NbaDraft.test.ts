@@ -1,5 +1,5 @@
-import { NbaDraft } from '../../index';
-import { MethodTestGenerator } from '../../Testing/Shared';
+import { NbaDraft } from '../../src/index';
+import { MethodTestGenerator } from '../Shared';
 
 const testSportradarObject = new NbaDraft({ apiKey: '' });
 

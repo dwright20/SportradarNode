@@ -1,5 +1,5 @@
-import { NcaaMB, NcaaMBSeasonType, NcaaMBRankingsType } from '../../index';
-import { MethodTestGenerator } from '../../Testing/Shared';
+import { NcaaMB, NcaaMBSeasonType, NcaaMBRankingsType } from '../../src/index';
+import { MethodTestGenerator } from '../Shared';
 
 // Increase delay between calls for testing
 const testSportradarObject = new NcaaMB({ apiKey: '' });

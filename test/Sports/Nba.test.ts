@@ -1,5 +1,5 @@
-import { Nba, NbaSeasonType } from '../../index';
-import { MethodTestGenerator } from '../../Testing/Shared';
+import { Nba, NbaSeasonType } from '../../src/index';
+import { MethodTestGenerator } from '../Shared';
 
 const testSportradarObject = new Nba({ apiKey: '' });
 
