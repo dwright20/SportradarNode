@@ -2,8 +2,8 @@
   "name": "sportradar-node",
   "version": "1.0.0",
   "description": "A Node package for interacting with the Sportrader API",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
