@@ -56,14 +56,14 @@ export class NcaaMB extends Sportradar {
   }
 
   /**
-   * @param {string} gameId 
+   * @param {string} gameId
    * @memberof NcaaMB
    */
   getGameSummary(gameId: string) {
     return this.getRequest(`${this.prefix}games/${gameId}/summary`);
   }
 
-  /** 
+  /**
    * @memberof NcaaMB
    */
   getLeagueHierarchy() {
