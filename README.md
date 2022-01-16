@@ -1,5 +1,7 @@
 # SportradarNode
 
+![npm](https://img.shields.io/npm/v/sportradar-node)
+
 A [node](https://nodejs.org/) package for interacting with the [Sportradar](https://www.sportradar.com/) API without needing to remember the endpoints, inputs, and (some) Sportradar-specific IDs. To use this package and connect to the Sportradar API, you will need a [Sportradar account](https://developer.sportradar.com/member/register). With this account you can create an API key that comes free of charge and provides access to the API at a rate of 1 call/second and up-to 1000 calls/month.
 
 ## Coverage
