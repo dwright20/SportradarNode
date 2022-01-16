@@ -40,11 +40,21 @@ export class Sportradar implements SportradarSettings {
     });
   }
 
+  /**
+   * Takes a string, appends it to http://api.sportradar.us/, and makes a GET request
+   * @param path
+   * @returns AxiosResponse
+   */
   async getRequest(path: string) {
     await this.sleep();
     return this.AxiosClient.get(path + this.format);
   }
 
+  /**
+   * Takes a string, appends it to http://api.sportradar.us/, and makes a POST request
+   * @param path
+   * @returns AxiosResponse
+   */
   async postRequest(path: string) {
     await this.sleep();
     return this.AxiosClient.post(path + this.format);

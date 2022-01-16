@@ -19,7 +19,17 @@
     "type": "git",
     "url": "git+https://github.com/dwright20/SportradarNode.git"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "npm",
+    "api",
+    "sports",
+    "nba",
+    "nfl",
+    "soccer",
+    "sportsanayltics",
+    "sportradar"
+  ],
   "author": {
     "name": "Dejon",
     "url": "https://dejon.net"

@@ -15,7 +15,7 @@ This package is available through the [npm registry](https://www.npmjs.com/) and
 $ npm install sportradar-node
 ```
 ### Example
-Lets get a list of the NFL teams who made the playoffs in the 2021-2022 season:
+Let's get a list of the NFL teams who made the playoffs in the 2021-2022 season:
 
 ```typescript
 import * as sra from 'sportradar-node';
