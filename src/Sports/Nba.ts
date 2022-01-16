@@ -1,5 +1,5 @@
-import { Sportradar } from '../Sportradar';
-import { Defaults, SportConstructor } from './Shared';
+import { Sportradar } from '../sportradar';
+import { Defaults, SportConstructor } from './shared';
 
 export enum SeasonType {
   REG = 'REG',
