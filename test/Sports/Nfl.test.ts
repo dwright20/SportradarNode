@@ -63,7 +63,7 @@ const methodTests = [
 ];
 
 test('Nfl Object', () => {
-  expect(testSportradarObject.prefix).toBe(`nfl/trial/v7/en/`);
+  expect(testSportradarObject.prefix).toBe(`nfl/official/trial/v7/en/`);
 });
 
 for (const methodTest of methodTests) {

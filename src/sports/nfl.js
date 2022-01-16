@@ -37,7 +37,7 @@ var Nfl = /** @class */ (function (_super) {
         _this.accessLevel = (_a = nflDraftSettings.accessLevel) !== null && _a !== void 0 ? _a : 'trial';
         _this.apiKey = nflDraftSettings.apiKey;
         _this.language = (_b = nflDraftSettings.language) !== null && _b !== void 0 ? _b : 'en';
-        _this.prefix = "nfl/" + _this.accessLevel + "/v" + shared_1.Defaults.version.nfl + "/" + _this.language + "/";
+        _this.prefix = "nfl/official/" + _this.accessLevel + "/v" + shared_1.Defaults.version.nfl + "/" + _this.language + "/";
         return _this;
     }
     Nfl.prototype.getDailyChangeLog = function (year, month, day) {

@@ -21,7 +21,7 @@ export class Nfl extends Sportradar {
     this.accessLevel = nflDraftSettings.accessLevel ?? 'trial';
     this.apiKey = nflDraftSettings.apiKey;
     this.language = nflDraftSettings.language ?? 'en';
-    this.prefix = `nfl/${this.accessLevel}/v${Defaults.version.nfl}/${this.language}/`;
+    this.prefix = `nfl/official/${this.accessLevel}/v${Defaults.version.nfl}/${this.language}/`;
   }
 
   getDailyChangeLog(year: string, month: string, day: string) {
