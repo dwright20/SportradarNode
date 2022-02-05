@@ -1,5 +1,5 @@
-import { Sportradar } from '../sportradar';
-import { Defaults, SportConstructor } from './shared';
+import { Sportradar } from '../Sportradar';
+import { Defaults, SportConstructor } from './Shared';
 
 export class NbaDraft extends Sportradar {
   prefix: string;

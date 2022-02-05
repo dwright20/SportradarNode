@@ -1,4 +1,4 @@
-import { Formats } from '../sportradar';
+import { Formats } from '../Sportradar';
 
 export const Defaults = {
   version: {

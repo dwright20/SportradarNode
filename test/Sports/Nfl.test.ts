@@ -1,5 +1,5 @@
 import { Nfl, NflSeasonType } from '../../src/index';
-import { MethodTestGenerator } from '../shared';
+import { MethodTestGenerator } from '../Shared';
 
 // Increase delay between calls for testing
 const testSportradarObject = new Nfl({ apiKey: '' });
