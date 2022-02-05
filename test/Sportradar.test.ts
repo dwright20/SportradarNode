@@ -1,4 +1,4 @@
-import { Sportradar, Formats } from '../src/Sportradar';
+import { Sportradar, Formats } from '../src/sportradar';
 
 test('Sportradar Object', () => {
   const testSportradarObject = new Sportradar({ apiKey: 'testing-key' });
