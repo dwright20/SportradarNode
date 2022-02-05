@@ -1,6 +1,6 @@
 {
   "name": "sportradar-node",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A Node package for interacting with the Sportrader API",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",

@@ -1,5 +1,5 @@
 import { NflDraft } from '../../src/index';
-import { MethodTestGenerator } from '../shared';
+import { MethodTestGenerator } from '../Shared';
 
 const testSportradarObject = new NflDraft({ apiKey: '' });
 
